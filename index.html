@@ -10,27 +10,43 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    #cardTitle {color: white; }
-    body { background-color: aquamarine; }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    #cardTitle {color: #2f2f2f; }
+    #cardMessage {color: #7e7e7e; }
+    body { background-color: #e3eff8; font-family: Verdana, sans-serif;}
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution { color: hsl(228, 45%, 44%); }
+    #textBox {width: 260px;}
+      #card {   width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;}
+    #image { border-radius: 10px; }
+    .flex-container { margin: auto;
+                      text-align: center;
+                      display: flex;
+                      flex-direction: column;
+                      height: auto; 
+                      justify-items: center;
+                      align-items: center; 
+                    }
   </style>
 </head>
 <body>
-
-  <section>
-   <img src="images/image-qr-code.png" alt="QR Code" width="200">
-  </section>
-  <section>
-  <h2 id="cardTitle">
+<div id="card" class="flex-container">
+  <div>
+    <img id="image" src="images/image-qr-code.png" alt="QR Code" width="260">
+  </div>
+  
+  <div id="textBox">
+  <h2 style="font-size: 24px" id="cardTitle">
     Improve your front-end skills by building projects
   </h2>
-  <p id="cardMessage">
+  <p style="font-size: 18px" id="cardMessage">
     Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   </p>
-  
-  </section>
-
+  </div>
+</div>
+  <br> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/d-thad-whitaker/">DTW</a>.
